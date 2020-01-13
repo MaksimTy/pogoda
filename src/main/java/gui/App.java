@@ -21,7 +21,6 @@ public class App extends Application {
 
         GUIWindow window = new GUIWindow();
 
-        //todo метод, периодического обновления Parser
 
         AnchorPane root = new AnchorPane(window);
         AnchorPane.setBottomAnchor(window, this.insets);

@@ -17,12 +17,6 @@ import java.util.TreeSet;
 public class GUIButtons extends VBox {
 
     private TreeSet<Date> dates;
-/*    private Border border = new Border(
-            new BorderStroke(
-                    Color.GREEN,
-                    BorderStrokeStyle.DASHED,
-                    CornerRadii.EMPTY,
-                    BorderWidths.DEFAULT));*/
     private Date selected;              //выбранная дата для отображения прогноза.
     private GUIForecast guiForecast;
     private Parser parser;
@@ -49,15 +43,6 @@ public class GUIButtons extends VBox {
             button.setPrefWidth(this.buttonsWidth);
             button.setMaxWidth(this.buttonsWidth);
             button.setMinWidth(this.buttonsWidth);
-            /*button.setBackground(new Background(
-                    new BackgroundFill(Color.SNOW,
-                            CornerRadii.EMPTY,
-                            Insets.EMPTY)));
-            button.setBorder(new Border(
-                    new BorderStroke(Color.BLACK,
-                            BorderStrokeStyle.SOLID,
-                            new CornerRadii(15),
-                            BorderWidths.DEFAULT)));*/
 
             this.getChildren().add(button);
 
@@ -81,7 +66,6 @@ public class GUIButtons extends VBox {
                 }
             });
         }
-       // this.setBorder(this.border);
     }
 
     public void setGuiForecast(GUIForecast guiForecast) {
